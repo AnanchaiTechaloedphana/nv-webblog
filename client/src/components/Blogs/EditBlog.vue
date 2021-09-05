@@ -38,4 +38,16 @@
 console.log(err)
 }
         }
-        
+        },
+        async created () { 
+            try {
+let blogId = this. $route.params.blogId
+this.blog = (await BlogsService.show(blogId)).data
+ } catch (error) {
+console.log (error)
+ }
+        }
+    }
+</script>
+<style scoped> </style>
+    

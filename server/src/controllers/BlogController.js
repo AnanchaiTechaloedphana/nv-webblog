@@ -63,7 +63,7 @@ module.exports = {
                  }
 
          },
-         // get blog by id 
+     // get blog by id 
         async show (req,res) {
         try { 
             const blog = await Blog.findByPk(req.params.blogId) 

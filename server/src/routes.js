@@ -27,7 +27,7 @@ module.exports = (app) => {
     UserController.index    
   )
 
-  //Blog
+  //BlogAll
   app.post('/blog', BlogController.create),
   app.put('/blog/:blogId',BlogController.put)
   app.delete('/blog/:blogId',BlogController.remove)
